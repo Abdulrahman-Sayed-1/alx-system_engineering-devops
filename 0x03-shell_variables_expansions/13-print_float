@@ -1,2 +1,3 @@
 #!/bin/bash
-printf "%.02fn" $NUM
+printf "%.2f\n" "${NUM:-0}"
+
