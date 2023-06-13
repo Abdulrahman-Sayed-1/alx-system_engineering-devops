@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "${*// /}" | tr -dc '[:alpha:]' | fold -w 1 | sed 's/$/\n/'
+echo $(cut -c1 | tr -d '\n')
