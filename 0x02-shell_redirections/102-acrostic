@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c 1 | paste -s -d "
+echo "${*// /}" | tr -dc '[:alpha:]' | fold -w 1 | sed 's/$/\n/'
